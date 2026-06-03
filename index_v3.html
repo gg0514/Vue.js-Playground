@@ -4,12 +4,15 @@
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
-  Vue.createApp({
+  var test1= Vue.createApp({
     data() {
       return {
         message: 'Hello, Vue!'
       }
     }
   }).mount('#app');
+
+  console.log(test1.message);
+  console.log(test1.data);
 </script>
 
