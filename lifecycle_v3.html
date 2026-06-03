@@ -1,0 +1,44 @@
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">
+    {{ message }}
+</div>
+
+
+<script>
+  var test1= Vue.createApp({
+    data() {
+      return {
+        message: 'Hello, Vue!'
+      }
+    },
+    beforeCreate() {
+      console.log('beforeCreate');
+      console.log(this.message);
+    },
+    created() {
+      console.log('created');
+      console.log(this.message);
+    },
+    beforeMount() {
+      console.log('beforeMount');
+      console.log(this.message);
+    },
+    mounted() {
+      console.log('mounted');
+      console.log(this.message);
+    },
+    beforeUpdate() {
+      console.log('beforeUpdate');
+      console.log(this.message);
+    },
+    updated() {
+      console.log('updated');
+      console.log(this.message);
+    },
+  }).mount('#app');
+    
+
+
+</script>
